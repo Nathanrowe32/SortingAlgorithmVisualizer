@@ -1,0 +1,16 @@
+body {
+    background-color: coral;
+    margin: 0;
+    background-color: #eee;
+    justify-content: center;
+}
+
+
+.bar {
+    width: 5px;
+    padding: 30px;
+    background-color: yellow;
+    border: black;
+    border-width: 5px;
+    margin: 20px;
+}
