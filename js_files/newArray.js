@@ -22,6 +22,7 @@ function createArray() {
         bar.className = "bar";
         bar.classList.add("bar");
         bar.style.height = heightBars[i].toString() + "px";
+        bars.push(bar);
         barChart.appendChild(bar);
     }
     console.log(bars);
