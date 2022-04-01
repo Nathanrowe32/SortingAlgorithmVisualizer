@@ -12,22 +12,21 @@
 </head>
 
 <body>
-    <h1 id="header">Sorting visualizer</h1>
+    <h1 class="header">Sorting Visualizer</h1>
 
     <nav class="navbar navbar-light bg-light">
         <div class="container-fluid">
             <form class="d-flex">
-                <button type="button" class="btn btn-dark newArray" id="newArray">new array</button>
-                <button type="button" class="btn btn-dark">Bubble sort</button>
-                <button type="button" class="btn btn-dark">Selection sort</button>
-                <button type="button" class="btn btn-dark">Insertion sort</button>
+                <button type="button" class="btn btn-dark newArray" id="newArray">Randomize</button>
+                <button type="button" class="btn btn-dark bubbleSort" id="bubbleSort">Bubble sort</button>
+                <button type="button" class="btn btn-dark" id="selectionSort">Selection sort</button>
+                <button type="button" class="btn btn-dark" id="insertionSort">Insertion sort</button>
                 <button type="button" class="btn btn-dark">Quick sort</button>
                 <button type="button" class="btn btn-dark">Merge sort</button>
             </form>
         </div>
-
-        <table id="barChart"></table>
-
+        <div id="barChart" , class="barChart">
+        </div>
     </nav>
 
 
@@ -37,6 +36,9 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
     <script src="js_files/newArray.js"></script>
+    <script src="js_files/bubble.js"></script>
+    <script src="js_files/selection.js"></script>
+    <script src="js_files/insertion.js"></script>
 </body>
 
 </html>
