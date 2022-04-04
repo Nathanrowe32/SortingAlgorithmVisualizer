@@ -1,6 +1,7 @@
 let bubbleSortBtn = document.querySelector("#bubbleSort")
 bubbleSortBtn.addEventListener("click", function () { bubbleSort(bars, bars.length) });
 
+
 function swap(arr, xp, yp) {
     var temp = arr[xp].style.height;
     arr[xp].style.height = arr[yp].style.height;
@@ -21,7 +22,7 @@ async function bubbleSort(arr, n) {
 
                 arr[j].style.background = "black";
                 arr[j + 1].style.background = "black";
-                await new Promise(resolve => setTimeout(() => { resolve(), delay(2) }));
+                await delay(speedSort * .005);
                 swap(arr, j, j + 1);
                 arr[j].style.background = "red";
                 arr[j + 1].style.background = "red";

@@ -19,7 +19,7 @@ async function selectionSort(arr, n) {
             }
             arr[j].style.background = "black";
             arr[min_idx].style.background = "black";
-            await new Promise(resolve => setTimeout(() => { resolve(), delay(2) }));
+            await new Promise(resolve => setTimeout(() => { resolve(), delay(speedSort) }));
             swap(arr, min_idx, i);
             arr[j].style.background = "red";
             arr[min_idx].style.background = "red";

@@ -1,13 +1,18 @@
+let arr_size = document.querySelector("#arr_sz");
+let sortSpeed = document.querySelector("#speed_scale");
 let newArrayBtn = document.querySelector("#newArray")
-newArrayBtn.addEventListener("click", createArray);
+arr_size.addEventListener("input", function () { createBars() });
+sortSpeed.addEventListener("input", function () { createBars() });
+var speedSort = 0;
+var numBars = 0;
+newArrayBtn.addEventListener("click", function () { createArray(numBars) });
 const barChart = document.getElementById("barChart");
-
 var heightBars = [];
 var bars = [];
-const numBars = 100;
 
-function createArray() {
 
+function createArray(numBars) {
+    console.log(numBars);
     //clear the arrays
     clearArray();
 
@@ -39,4 +44,15 @@ function clearArray() {
 
     heightBars = [];
     bars = [];
+}
+
+function createBars() {
+    numBars = arr_size.value;
+    speedSort = sortSpeed.value;
+}
+
+function delay(n) {
+    return new Promise(function (resolve) {
+        setTimeout(resolve, n * 1000);
+    });
 }

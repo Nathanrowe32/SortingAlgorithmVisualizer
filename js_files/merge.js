@@ -64,7 +64,7 @@ async function mergeSort(arr, l, r) {
     mergeSort(arr, m + 1, r);
     arr[l].style.background = "black";
     arr[r].style.background = "black";
-    await new Promise(resolve => setTimeout(() => { resolve(), delay(2) }));
+    await new Promise(resolve => setTimeout(() => { resolve(), delay(speedSort) }));
     merge(arr, l, m, r);
     arr[l].style.background = "red";
     arr[r].style.background = "red";

@@ -54,13 +54,13 @@ async function quickSort(arr, low, high) {
         // partition and after partition
         arr[low].style.background = "black";
         arr[pi - 1].style.background = "black";
-        await new Promise(resolve => setTimeout(() => { resolve(), delay(2) }));
+        await new Promise(resolve => setTimeout(() => { resolve(), delay(speedSort) }));
         quickSort(arr, low, pi - 1);
         arr[low].style.background = "red";
         arr[pi - 1].style.background = "red";
         arr[pi + 1].style.background = "black";
         arr[high].style.background = "black";
-        await new Promise(resolve => setTimeout(() => { resolve(), delay(2) }));
+        await new Promise(resolve => setTimeout(() => { resolve(), delay(speedSort) }));
         quickSort(arr, pi + 1, high);
         arr[pi + 1].style.background = "red";
         arr[high].style.background = "red";
