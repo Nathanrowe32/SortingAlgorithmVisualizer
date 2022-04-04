@@ -5,7 +5,6 @@ function swap(arr, xp, yp) {
     var temp = arr[xp].style.height;
     arr[xp].style.height = arr[yp].style.height;
     arr[yp].style.height = temp;
-
 }
 
 async function selectionSort(arr, n) {
