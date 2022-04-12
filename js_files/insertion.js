@@ -21,7 +21,7 @@ async function insertionSort(arr, n) {
         while (j >= 0 && parseInt(arr[j].style.height) > key) {
             arr[j].style.background = "black";
             arr[j + 1].style.background = "black";
-            await new Promise(resolve => setTimeout(() => { resolve(), delay(speedSort) }));
+            await delay(speedSort * .005);
             swap(arr, j + 1, j);
             arr[j].style.background = "red";
             arr[j + 1].style.background = "red";
