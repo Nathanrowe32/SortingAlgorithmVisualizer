@@ -23,3 +23,5 @@ git clone https://github.com/Nathanrowe32/SortingAlgorithmVisualizer.git
 <h2> # Additional notes </h2>
 Feel free to pull and play around, I made this project to experiment with sorting algorithms that I studied in Algorithms and Data Structures.
 This project is currently utilising HTML, CSS, Bootstrap, and JavaScript.
+
+Currently the merge sort, quick sort, and heapify do not have animations, but working on fixing it.
